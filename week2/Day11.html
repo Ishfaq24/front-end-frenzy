@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Box Model Example</title>
+    <style>
+        /* Base reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 800px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+        }
+
+        .box {
+            padding: 25px;
+            margin: 25px auto;
+            width: 85%;
+            border: 5px solid transparent;
+            border-radius: 15px;
+            font-size: 20px;
+            color: #333;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Hover Effects */
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Different box styles */
+        .box1 {
+            background: linear-gradient(145deg, #a1c4fd, #c2e9fb);
+            border-color: #007BFF;
+        }
+
+        .box2 {
+            background: linear-gradient(145deg, #d4fc79, #96e6a1);
+            border-color: #28a745;
+        }
+
+        .box3 {
+            background: linear-gradient(145deg, #ffafbd, #ffc3a0);
+            border-color: #dc3545;
+        }
+
+        .box4 {
+            background: linear-gradient(145deg, #fddb92, #d1fdff);
+            border-color: #fd7e14;
+        }
+
+        /* Label under boxes */
+        .label {
+            margin-top: 10px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Box Model Showcase</h1>
+
+        <div class="box box1">
+            Box 1: Padding = 25px, Border = 5px, Margin = 25px
+        </div>
+        <p class="label">Blue Gradient Box with a Blue Border</p>
+
+        <div class="box box2">
+            Box 2: Padding = 25px, Border = 5px, Margin = 25px
+        </div>
+        <p class="label">Green Gradient Box with a Green Border</p>
+
+        <div class="box box3">
+            Box 3: Padding = 25px, Border = 5px, Margin = 25px
+        </div>
+        <p class="label">Pink Gradient Box with a Red Border</p>
+
+        <div class="box box4">
+            Box 4: Padding = 25px, Border = 5px, Margin = 25px
+        </div>
+        <p class="label">Orange Gradient Box with an Orange Border</p>
+
+        <footer>Created with care for approval and appreciation!</footer>
+    </div>
+</body>
+</html>
 
