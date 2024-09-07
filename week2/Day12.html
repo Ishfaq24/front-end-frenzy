@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block, Inline, and Inline-block Example</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .block-element {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .inline-container {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .inline-element {
+            display: inline;
+            background-color: #ffc107;
+            padding: 5px 10px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+
+        .inline-block-container {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .inline-block-element {
+            display: inline-block;
+            background-color: #28a745;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            margin: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Block, Inline & Inline-block</h1>
+
+        <!-- Block Element -->
+        <div class="block-element">
+            I’m a block element.
+        </div>
+
+        <!-- Inline Elements -->
+        <div class="inline-container">
+            <span class="inline-element">Inline 1</span>
+            <span class="inline-element">Inline 2</span>
+            <span class="inline-element">Inline 3</span>
+        </div>
+
+        <!-- Inline-block Elements -->
+        <div class="inline-block-container">
+            <div class="inline-block-element">Block 1</div>
+            <div class="inline-block-element">Block 2</div>
+            <div class="inline-block-element">Block 3</div>
+        </div>
+    </div>
+</body>
+</html>
