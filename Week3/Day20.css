@@ -1,0 +1,131 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Slightly lighter background for a modern look */
+    color: #333; /* Default text color for readability */
+    line-height: 1.6; /* Improves readability */
+}
+
+/* Container - Centers content and limits width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* Header Styles */
+header {
+    background-color: #222; /* Darker background for better contrast */
+    color: #fff; /* White text for readability */
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Navigation Styles */
+nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Reduced margin for a tighter layout */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px; /* Adjusted padding for a balanced look */
+    background-color: #444;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Slightly enlarges the button on hover for better interactivity */
+}
+
+/* Main Section Styles */
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjusted shadow for a subtle effect */
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222; /* Dark background for consistency with header */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px; /* Increased padding for easier touch targets */
+    }
+
+    main {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}
