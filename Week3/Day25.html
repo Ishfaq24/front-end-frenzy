@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display List of Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        #numberList {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Display List of Numbers</h1>
+    <button class="btn" onclick="displayNumbers()">Show Numbers</button>
+
+    <ul id="numberList"></ul>
+
+    <script>
+        function displayNumbers() {
+            var listElement = document.getElementById('numberList');
+            listElement.innerHTML = '';  // Clear any previous content
+
+            for (var i = 1; i <= 10; i++) {
+                var listItem = document.createElement('li');
+                listItem.textContent = 'Number ' + i;
+                listElement.appendChild(listItem);
+            }
+        }
+    </script>
+
+</body>
+</html>
