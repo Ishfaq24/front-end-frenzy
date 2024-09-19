@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Information on Click</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f4f8;
+        }
+
+        #infoElement {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #24292e;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0366d6;
+        }
+
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="infoElement">Click the button to learn about GitHub!</div>
+    <button class="btn" onclick="displayGitHubInfo()">Show GitHub Info</button>
+
+    <script>
+        function displayGitHubInfo() {
+            document.getElementById("infoElement").innerHTML = `
+                <strong>GitHub</strong> is a platform for developers to collaborate on code, manage version control using <strong>Git</strong>, 
+                and host open-source or private repositories. It is widely used for:
+                <ul style="list-style-type: circle; text-align: left; margin: 10px auto; width: 60%;">
+                    <li>Collaborating on software development projects</li>
+                    <li>Tracking and managing code changes</li>
+                    <li>Sharing projects with the open-source community</li>
+                </ul>
+                Learn more at <a href="https://github.com" target="_blank">GitHub</a>.
+            `;
+        }
+    </script>
+
+</body>
+</html>
