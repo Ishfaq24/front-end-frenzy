@@ -2,12 +2,6 @@
 
 This repository contains the project developed during the Dev Wizards Hackathon, where we focused on frontend. 
 
-## Features
-
-- **[Feature 1]**: Describe the first key feature of your project.
-- **[Feature 2]**: Describe the second key feature.
-- **[Feature 3]**: Describe any additional features that stand out.
-
 ## Technologies Used
 
 - **Frontend**:  HTML, CSS, JavaScript
